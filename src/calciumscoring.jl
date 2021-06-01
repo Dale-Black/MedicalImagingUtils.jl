@@ -22,10 +22,10 @@ function compute_calcium_scores(image, spacing, mask, min_vol=nothing, max_vol=n
 		
 		# Ignore too small or too large lesions
 		lesion_volume = count(lesion_mask) * voxel_volume
-		if ((min_vol != nothing) && (lesion_volume < min_vol))
+		if ((min_vol !== nothing) && (lesion_volume < min_vol))
 			continue
 		end
-		if ((max_vol != nothing) && (lesion_volume > min_vol))
+		if ((max_vol !== nothing) && (lesion_volume > max_vol))
 			continue
 		end
 		
