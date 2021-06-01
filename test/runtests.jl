@@ -1,6 +1,2 @@
-using MedicalImagingUtils
-using Test
-
-@testset "MedicalImagingUtils.jl" begin
-    # Write your tests here.
-end
+include("./imports.jl")
+include("cacliumscoring.jl")
