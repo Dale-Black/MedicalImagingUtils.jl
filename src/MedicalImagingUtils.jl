@@ -1,5 +1,11 @@
 module MedicalImagingUtils
 
-# Write your package code here.
+using Images
+
+include("./calciumscoring.jl")
+
+export
+    # Export calciumscoring.jl functions
+    compute_calcium_scores
 
 end
